@@ -168,9 +168,9 @@ testing_criteria = [{
 
 **Progression:**
 ```
-Telemetry → Basic Evaluation → Tool Evaluation → Tool Accuracy → Red Team
-    ↓              ↓                  ↓                ↓              ↓
- Monitoring    Safety checks     Function tools    Selection    Security
+Telemetry → Basic Evaluation → Tool Accuracy
+    ↓              ↓                ↓
+ Monitoring    Safety checks    Selection
 ```
 
 ---

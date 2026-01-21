@@ -194,20 +194,14 @@ Assign the following roles based on the notebooks you plan to run. Each role spe
 | **Azure AI Developer** | User | AI Foundry Project | Create and manage agents, threads, and runs |
 | **Cognitive Services OpenAI User** | User | AI Foundry Project | Access OpenAI model deployments |
 
-#### 📁 File Search & Storage Roles
+#### � Azure AI Search Roles
 
 | Role | Assignee | Resource | Purpose | Notebooks |
 |------|----------|----------|---------|-----------|
-| **Storage Blob Data Contributor** | User | Project Storage Account | Upload files for agent file search | `3-file-search.ipynb`, `6-azure-ai-with-file-search.ipynb` |
-
-#### 🔍 Azure AI Search Roles
-
-| Role | Assignee | Resource | Purpose | Notebooks |
-|------|----------|----------|---------|-----------|
-| **Search Index Data Contributor** | User | AI Search Resource | Create indexes, upload documents | `5-agents-aisearch.ipynb`, `8-foundry-IQ-agents.ipynb` |
-| **Search Index Data Reader** | User | AI Search Resource | Query search indexes | `5-agents-aisearch.ipynb`, `8-foundry-IQ-agents.ipynb` |
-| **Search Service Contributor** | User | AI Search Resource | Manage search service, create knowledge bases | `8-foundry-IQ-agents.ipynb` |
-| **Search Index Data Reader** | Managed Identity | AI Search Resource | ⚠️ **CRITICAL**: Agent runtime access to knowledge bases | `8-foundry-IQ-agents.ipynb` |
+| **Search Index Data Contributor** | User | AI Search Resource | Create indexes, upload documents | `azure-ai-agents/3-agents-aisearch.ipynb`, `azure-ai-agents/5-foundry-IQ-agents.ipynb` |
+| **Search Index Data Reader** | User | AI Search Resource | Query search indexes | `azure-ai-agents/3-agents-aisearch.ipynb`, `azure-ai-agents/5-foundry-IQ-agents.ipynb` |
+| **Search Service Contributor** | User | AI Search Resource | Manage search service, create knowledge bases | `azure-ai-agents/5-foundry-IQ-agents.ipynb` |
+| **Search Index Data Reader** | Managed Identity | AI Search Resource | ⚠️ **CRITICAL**: Agent runtime access to knowledge bases | `azure-ai-agents/5-foundry-IQ-agents.ipynb` |
 
 #### ️ Role Assignment Commands
 
@@ -248,9 +242,8 @@ az role assignment create --role "Search Index Data Reader" --assignee $PROJECT_
 ```
 
 > **⚠️ Critical Notes:**
-> - **Managed Identity Role**: The `Search Index Data Reader` on the Project Managed Identity is **required** for `8-foundry-IQ-agents.ipynb` - without it, the MCP tool cannot query the knowledge base at runtime.
-> - **Role Propagation**: Role assignments can take **5-10 minutes** to propagate. If you encounter permission errors, wait and retry.
-> - **Storage Networking**: If you encounter a `403 Forbidden` error with file search, configure the storage account networking to allow access.  
+> - **Managed Identity Role**: The `Search Index Data Reader` on the Project Managed Identity is **required** for `azure-ai-agents/5-foundry-IQ-agents.ipynb` - without it, the MCP tool cannot query the knowledge base at runtime.
+> - **Role Propagation**: Role assignments can take **5-10 minutes** to propagate. If you encounter permission errors, wait and retry.  
 
 ---
 
@@ -265,13 +258,10 @@ Follow this structured learning path to master Microsoft Foundry and AI Agents:
 |---|----------|-------------|
 | 1 | [Agent Basics](azure-ai-agents/1-basics.ipynb) | Fundamental agent concepts and lifecycle |
 | 2 | [Code Interpreter](azure-ai-agents/2-code-interpreter.ipynb) | Python code execution capabilities |
-| 3 | [File Search](azure-ai-agents/3-file-search.ipynb) | Document processing and Q&A |
-| 4 | [Bing Grounding](azure-ai-agents/4-bing-grounding.ipynb) | Web search integration |
-| 5 | [Agents + AI Search](azure-ai-agents/5-agents-aisearch.ipynb) | Enterprise search integration |
-| 6 | [Multi-Agent Workflows](azure-ai-agents/6-multi-agent-solution-with-workflows.ipynb) | Collaborative AI systems |
-| 7 | [MCP Tools](azure-ai-agents/7-mcp-tools.ipynb) | Model Context Protocol integration |
-| 8 | [🧠 Foundry IQ Agents](azure-ai-agents/8-foundry-IQ-agents.ipynb) | **Revolutionary agentic retrieval** - Knowledge-grounded agents |
-| 9 | [Agent Memory Search](azure-ai-agents/9-agent-memory-search.ipynb) | Persistent memory patterns |
+| 3 | [Agents + AI Search](azure-ai-agents/3-agents-aisearch.ipynb) | Enterprise search integration |
+| 4 | [Multi-Agent Workflows](azure-ai-agents/4-multi-agent-solution-with-workflows.ipynb) | Collaborative AI systems |
+| 5 | [🧠 Foundry IQ Agents](azure-ai-agents/5-foundry-IQ-agents.ipynb) | **Revolutionary agentic retrieval** - Knowledge-grounded agents |
+| 6 | [Agent Memory Search](azure-ai-agents/6-agent-memory-search.ipynb) | Persistent memory patterns |
 
 ### 🤖⚙️ Phase 2: Microsoft Agent Framework
 **Location:** `agent-framework/`
@@ -284,66 +274,9 @@ The **Microsoft Agent Framework** is an open-source SDK that unifies Semantic Ke
 
 | # | Notebook | Description |
 |---|----------|-------------|
-| 1 | [Basic Agent](agent-framework/agents/azure-ai-agents/1-azure-ai-basic.ipynb) | Fundamental agent concepts with automatic lifecycle management |
-| 2 | [Explicit Settings](agent-framework/agents/azure-ai-agents/2-azure-ai-with-explicit-settings.ipynb) | Agent creation with explicit configuration patterns |
-| 3 | [Existing Agent](agent-framework/agents/azure-ai-agents/3-azure-ai-with-existing-ai-agent.ipynb) | Working with pre-existing agents using agent IDs |
-| 4 | [Function Tools](agent-framework/agents/azure-ai-agents/4-azure-ai-with-function-tools.ipynb) | Comprehensive function tool integration patterns |
-| 5 | [Code Interpreter](agent-framework/agents/azure-ai-agents/5-azure-ai-with-code-interpreter.ipynb) | Python code execution and mathematical problem solving |
-| 6 | [File Search](agent-framework/agents/azure-ai-agents/6-azure-ai-with-file-search.ipynb) | Document-based question answering with file uploads |
-| 7 | [Bing Grounding](agent-framework/agents/azure-ai-agents/7-azure-ai-with-bing-grounding.ipynb) | Web search integration using Bing Grounding |
-| 8 | [Hosted MCP](agent-framework/agents/azure-ai-agents/8-azure-ai-with-hosted-mcp.ipynb) | Model Context Protocol server integration |
-| 9 | [Multi-turn Threads](agent-framework/agents/azure-ai-agents/9-azure-ai-with-existing-multi-turn-thread.ipynb) | Managing multi-turn conversation threads |
-
-#### 🧠 Context Providers (`context-providers/`)
-
-| # | Notebook | Use Case |
-|---|----------|----------|
-| 1 | [Simple Context Provider](agent-framework/context-providers/1-simple-context-provider.ipynb) | Customer Profile Collection |
-| 2 | [Azure AI Search Context](agent-framework/context-providers/2-azure-ai-search-context-agentic.ipynb) | Document-Based Decisions with RAG |
-
-#### 🛡️ Middleware (`middleware/`)
-
-| # | Notebook | Use Case |
-|---|----------|----------|
-| 1 | [Agent & Run Level](agent-framework/middleware/1-agent-and-run-level-middleware.ipynb) | Middleware scoping fundamentals |
-| 2 | [Function-Based](agent-framework/middleware/2-function-based-middleware.ipynb) | Function-based patterns |
-| 3 | [Class-Based](agent-framework/middleware/3-class-based-middleware.ipynb) | Class-based with inheritance |
-| 4 | [Decorator Middleware](agent-framework/middleware/4-decorator-middleware.ipynb) | Resource Rebalancing |
-| 5 | [Chat Middleware](agent-framework/middleware/5-chat-middleware.ipynb) | Content Filtering |
-| 6 | [Exception Handling](agent-framework/middleware/6-exception-handling-with-middleware.ipynb) | Data Recovery |
-| 7 | [Termination](agent-framework/middleware/7-middleware-termination.ipynb) | Compliance Screening |
-| 8 | [Result Override](agent-framework/middleware/8-override-result-with-middleware.ipynb) | Data Enrichment |
-| 9 | [Shared State](agent-framework/middleware/9-shared-state-middleware.ipynb) | Activity Audit Trail |
-
-#### 📊 Observability (`observability/`)
-
-| # | Notebook | Use Case |
-|---|----------|----------|
-| 1 | [Foundry Tracing](agent-framework/observability/1-agent-with-foundry-tracing.ipynb) | Execution Monitoring |
-| 2 | [Agent Observability](agent-framework/observability/2-azure-ai-agent-observability.ipynb) | Service Monitoring |
-| 3 | [Workflow Observability](agent-framework/observability/3-workflow-observability.ipynb) | Pipeline Monitoring |
-
-#### 🧵 Threads (`threads/`)
-
-| # | Notebook | Use Case |
-|---|----------|----------|
-| 1 | [Custom Message Store](agent-framework/threads/1-custom-chat-message-store-thread.ipynb) | Audit Trail Storage |
-| 2 | [Redis Message Store](agent-framework/threads/2-redis-chat-message-store-thread.ipynb) | Distributed Sessions |
-| 3 | [Suspend/Resume Thread](agent-framework/threads/3-suspend-resume-thread.ipynb) | Long-Running Requests |
-
-#### 🔄 Workflows (`workflows/`)
-
-| # | Notebook | Use Case | Pattern |
-|---|----------|----------|---------|
-| 1 | [Azure AI Streaming](agent-framework/workflows/1-azure-ai-agents-streaming.ipynb) | Real-time Data Updates | Streaming |
-| 2 | [Chat Streaming](agent-framework/workflows/2-azure-chat-agents-streaming.ipynb) | Customer Support Chat | Streaming |
-| 3 | [Sequential Application](agent-framework/workflows/3-sequential-agents-loan-application.ipynb) | Application Processing | Sequential |
-| 4 | [Custom Executors](agent-framework/workflows/4-sequential-custom-executors-compliance.ipynb) | Approval with Compliance | Sequential |
-| 5 | [Limit Approval](agent-framework/workflows/5-credit-limit-with-human-input.ipynb) | Limit Approval Workflow | Human-in-the-loop |
-| 6 | [Transaction Review](agent-framework/workflows/6-workflow-as-agent-human-in-the-loop-transaction-review.ipynb) | High-Value Authorization | Workflow-as-agent |
-| 7 | [Compliance Review](agent-framework/workflows/7-magentic-compliance-review-with-human-input.ipynb) | Plan Compliance Review | Magentic |
-| 8 | [Research Analysis](agent-framework/workflows/8-magentic-investment-research.ipynb) | Multi-Agent Research | Magentic |
-| 9 | [Reflection Pattern](agent-framework/workflows/9-workflow-as-agent-reflection-pattern.ipynb) | Communication Quality | Reflection |
+| 1 | [Middleware Patterns](agent-framework/agents/azure-ai-agents/1-agent-and-run-level-middleware.ipynb) | Agent-level vs run-level middleware patterns |
+| 2 | [Compliance Review](agent-framework/agents/azure-ai-agents/2-magentic-compliance-review-with-human-input.ipynb) | Magentic multi-agent with human approval |
+| 3 | [Research Analysis](agent-framework/agents/azure-ai-agents/3-magentic-investment-research.ipynb) | Magentic multi-agent orchestration |
 
 ### 📊 Phase 3: Observability & Evaluations
 **Location:** `observability-and-evaluations/`
@@ -354,9 +287,7 @@ Comprehensive evaluation, observability, and security testing for AI agents.
 |---|----------|----------|--------------|
 | 1 | [Telemetry](observability-and-evaluations/1-telemetry.ipynb) | Advisory Agent Monitoring | Azure Monitor, custom spans, Application Insights |
 | 2 | [Agent Evaluation](observability-and-evaluations/2-agent-evaluation.ipynb) | Advisory Agent Quality | Built-in evaluators (violence, fluency, task_adherence) |
-| 3 | [Function Tools Evaluation](observability-and-evaluations/3-agent-evaluation-with-function-tools.ipynb) | Business Assistant | FunctionTool evaluation, strict mode |
-| 4 | [Tool Call Accuracy](observability-and-evaluations/4-tool-call-accuracy-evaluation.ipynb) | Operations Tooling | `builtin.tool_call_accuracy`, JSONL data sources |
-| 5 | [Red Team Security](observability-and-evaluations/5-red-team-security-testing.ipynb) | AI Security Testing | RedTeam, AttackStrategy, RiskCategory |
+| 3 | [Tool Call Accuracy](observability-and-evaluations/3-tool-call-accuracy-evaluation.ipynb) | Operations Tooling | `builtin.tool_call_accuracy`, JSONL data sources |
 
 📖 [Complete Guide](observability-and-evaluations/README.md)
 
