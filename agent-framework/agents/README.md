@@ -1,4 +1,4 @@
-# 🤖 Agents
+# Agents
 
 This folder contains examples demonstrating how to create and use agents with Azure AI using the Microsoft Agent Framework.
 
@@ -16,7 +16,7 @@ All notebooks are in the `azure-ai-agents/` folder:
 | 2 | [`2-magentic-compliance-review-with-human-input.ipynb`](azure-ai-agents/2-magentic-compliance-review-with-human-input.ipynb) | Magentic multi-agent with human approval for compliance review |
 | 3 | [`3-magentic-investment-research.ipynb`](azure-ai-agents/3-magentic-investment-research.ipynb) | Magentic multi-agent orchestration for investment research |
 
-## 🚀 Prerequisites
+## Prerequisites
 
 1. **Azure CLI Authentication**:
    ```bash
@@ -34,7 +34,7 @@ All notebooks are in the `azure-ai-agents/` folder:
    BING_CONNECTION_ID=/subscriptions/.../connections/bing-connection
    ```
 
-## 🎓 Learning Path
+## Learning Path
 
 | Level | Notebooks |
 |-------|-----------|
@@ -42,7 +42,7 @@ All notebooks are in the `azure-ai-agents/` folder:
 | **Intermediate** | 2 (Magentic + Human-in-the-loop) |
 | **Advanced** | 3 (Multi-Agent Research) |
 
-## 📚 Related Resources
+## Related Resources
 
 - [Agent Framework Documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview)
 - [Agent Framework GitHub](https://github.com/microsoft/agent-framework)

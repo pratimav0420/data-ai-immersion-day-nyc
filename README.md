@@ -1,4 +1,4 @@
-# 🚀 Agentic AI Immersion Workshop
+# Agentic AI Immersion Workshop
 
 [![Microsoft Foundry](https://img.shields.io/badge/Microsoft-Foundry-blue?style=for-the-badge&logo=microsoft)](https://ai.azure.com)
 [![Python](https://img.shields.io/badge/Python-3.10+-green?style=for-the-badge&logo=python)](https://python.org)
@@ -11,20 +11,20 @@
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
-- [🎯 Mission Statement](#-mission-statement)
-- [📁 Repository Structure](#-repository-structure)
-- [💼 Industry Use Cases](#-industry-use-cases)
-- [🚀 Getting Started](#-getting-started)
+- [Mission Statement](#mission-statement)
+- [Repository Structure](#repository-structure)
+- [Industry Use Cases](#industry-use-cases)
+- [Getting Started](#getting-started)
   - [Required Azure RBAC Roles](#step-5-required-azure-rbac-roles)
-- [📚 Learning Path](#-learning-path)
-- [🛠️ Troubleshooting & Support](#️-troubleshooting--support)
-- [🤝 Community & Contributions](#-community--contributions)
+- [Learning Path](#learning-path)
+- [Troubleshooting & Support](#troubleshooting--support)
+- [Community & Contributions](#community--contributions)
 
 ---
 
-## 🎯 Mission Statement
+## Mission Statement
 
 This comprehensive workshop transforms you from an AI enthusiast into a Microsoft Foundry expert. Through progressive, hands-on modules, you'll master:
 
@@ -39,29 +39,29 @@ This comprehensive workshop transforms you from an AI enthusiast into a Microsof
 | **Deployment** | Hosted Agents with Azure Developer CLI | Azure Developer CLI (azd), Hosted Agents |
 | **Enterprise** | Responsible AI | Red Team Testing, Content Safety |
 
-> **🎓 Format**: Intensive hands-on experience  
-> **🎯 Audience**: Developers, AI practitioners, and solution architects  
-> **💡 Approach**: Progressive complexity with real-world business use cases
+> **Format**: Intensive hands-on experience  
+> **Audience**: Developers, AI practitioners, and solution architects  
+> **Approach**: Progressive complexity with real-world business use cases
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 agentic-ai-immersion-day/
 │
-├── 🤖 azure-ai-agents/                        # Azure AI Agents SDK (8 notebooks)
+├── azure-ai-agents/                           # Azure AI Agents SDK (8 notebooks)
 │   ├── 1-basics.ipynb                         # Agent fundamentals
 │   ├── 2-code-interpreter.ipynb               # Code execution
 │   ├── 3-agents-aisearch.ipynb                # Enterprise search
 │   ├── 4-bing-grounding.ipynb                 # Web search integration
 │   ├── 5-multi-agent-solution-with-workflows.ipynb  # Multi-agent orchestration
-│   ├── 6-foundry-IQ-agents.ipynb              # 🧠 Foundry IQ - Agentic retrieval
+│   ├── 6-foundry-IQ-agents.ipynb              # Foundry IQ - Agentic retrieval
 │   ├── 7-agent-memory-search.ipynb            # Memory patterns
 │   ├── 8-mcp-tools.ipynb                      # MCP integration
 │   └── seq-diagrams/                          # Sequence diagram images
 │
-├── 🤖⚙️ agent-framework/                       # Microsoft Agent Framework (3 notebooks)
+├── agent-framework/                           # Microsoft Agent Framework (3 notebooks)
 │   ├── agents/
 │   │   ├── azure-ai-agents/
 │   │   │   ├── 1-agent-and-run-level-middleware.ipynb    # Middleware patterns
@@ -71,13 +71,13 @@ agentic-ai-immersion-day/
 │   │   └── README.md
 │   └── README.md
 │
-├── 📊 observability-and-evaluations/          # Evaluation (3 notebooks)
+├── observability-and-evaluations/              # Evaluation (3 notebooks)
 │   ├── 1-telemetry.ipynb                      # Azure Monitor telemetry
 │   ├── 2-agent-evaluation.ipynb               # Built-in evaluators
 │   ├── 3-tool-call-accuracy-evaluation.ipynb  # Tool accuracy
 │   └── README.md
 │
-├── 🐳 .devcontainer/                          # Dev Container configuration
+├── .devcontainer/                              # Dev Container configuration
 │   └── devcontainer.json                      # Container settings
 │
 ├── .env.example                               # Environment template
@@ -90,11 +90,11 @@ agentic-ai-immersion-day/
 
 ---
 
-## 💼 Industry Use Cases
+## Industry Use Cases
 
 This workshop features **real-world FSI (Financial Services Industry) use cases** across all notebooks, demonstrating practical AI agent applications for enterprise banking, insurance, and investment scenarios.
 
-### 🤖 Azure AI Agents SDK
+### Azure AI Agents SDK
 
 | Use Case | Description | Technology | Notebook |
 |----------|-------------|------------|----------|
@@ -107,7 +107,7 @@ This workshop features **real-world FSI (Financial Services Industry) use cases*
 | Personalized Banking Assistant | Remembers customer preferences for personalized guidance | Azure AI Agents v2, Memory Search | [7-agent-memory-search.ipynb](azure-ai-agents/7-agent-memory-search.ipynb) |
 | Platform Operations Assistant | Model discovery, deployment management, evaluation creation | Azure AI Agents v2, Foundry MCP Server | [8-mcp-tools.ipynb](azure-ai-agents/8-mcp-tools.ipynb) |
 
-### 🤖⚙️ Agent Framework
+### Agent Framework
 
 | Use Case | Description | Technology | Notebook |
 |----------|-------------|------------|----------|
@@ -115,7 +115,7 @@ This workshop features **real-world FSI (Financial Services Industry) use cases*
 | Investment Research with Compliance | Compliance oversight of research plans before execution | Agent Framework, Magentic Orchestration | [2-magentic-compliance-review-with-human-input.ipynb](agent-framework/agents/azure-ai-agents/2-magentic-compliance-review-with-human-input.ipynb) |
 | Investment Research Report Generation | Multi-agent market research and quantitative analysis | Agent Framework, Magentic Multi-Agent | [3-magentic-investment-research.ipynb](agent-framework/agents/azure-ai-agents/3-magentic-investment-research.ipynb) |
 
-### 📊 Observability & Evaluations
+### Observability & Evaluations
 
 | Use Case | Description | Technology | Notebook |
 |----------|-------------|------------|----------|
@@ -123,7 +123,7 @@ This workshop features **real-world FSI (Financial Services Industry) use cases*
 | Loan Advisory Quality Testing | Evaluate agent responses for quality, safety, compliance | Azure AI Agents v2, Built-in Evaluators | [2-agent-evaluation.ipynb](observability-and-evaluations/2-agent-evaluation.ipynb) |
 | Banking Operations Tool Validation | Validate correct tool selection for banking operations | Azure AI Agents v2, Tool Call Accuracy | [3-tool-call-accuracy-evaluation.ipynb](observability-and-evaluations/3-tool-call-accuracy-evaluation.ipynb) |
 
-### 🔑 Key Patterns Demonstrated
+### Key Patterns Demonstrated
 
 | Pattern | Business Application | Count |
 |---------|---------------------|-------|
@@ -137,28 +137,7 @@ This workshop features **real-world FSI (Financial Services Industry) use cases*
 
 ---
 
-## 🚀 Getting Started
-
-### Option A: Dev Container (Recommended) 🐳
-
-For a consistent, pre-configured environment with all dependencies:
-
-1. **Prerequisites**: Install [Docker](https://docker.com) and [VS Code](https://code.visualstudio.com) with the [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
-
-2. **Open in Container**:
-   - Clone the repo and open in VS Code
-   - Press `F1` → **Dev Containers: Reopen in Container**
-   - Wait for the container to build (first time takes ~5 minutes)
-
-3. **Ready to go!** All dependencies are pre-installed including:
-   - Python 3.12 with all packages (frozen versions)
-   - Azure CLI and Azure Developer CLI (azd)
-   - Jupyter notebooks support
-   - GitHub Copilot extensions
-
-> 💡 **Tip:** Your Azure credentials are automatically mounted from your local machine.
-
-### Option B: Local Setup
+## Getting Started
 
 #### Step 1: Repository Setup
 
@@ -183,6 +162,11 @@ pip install -r requirements.txt
 ```
 
 #### Step 3: Configure Environment Variables
+ - Copy `.env.example` to `.env` in the root directory and update values accordingly
+   - This repository expects the `.env` file to be in the root directory, if you want to store it elsewhere or name it something else, update the `load_dotenv()` calls in notebooks
+   - Many of the Environment Variables needed can be found in the Overview tab of your Microsoft Foundry project or the connected resources in the Management Center tab
+   - For example, AZURE_OPENAI variables-
+<img src="images/env-example.png" width="75%"/>  
 
 1. Copy `.env.example` to `.env`
 2. Update with your Azure resources:
@@ -192,8 +176,6 @@ pip install -r requirements.txt
 AI_FOUNDRY_PROJECT_ENDPOINT=https://your-project.services.ai.azure.com
 AZURE_OPENAI_API_KEY=your-api-key
 AZURE_AI_MODEL_DEPLOYMENT_NAME=gpt-4o
-
-# Optional (for specific notebooks)
 BING_CONNECTION_ID=/subscriptions/.../connections/bing
 AZURE_AI_SEARCH_ENDPOINT=https://your-search.search.windows.net
 ```
@@ -204,13 +186,23 @@ AZURE_AI_SEARCH_ENDPOINT=https://your-search.search.windows.net
 2. **Deploy Models** — `gpt-4o`, `gpt-4o-mini`, `text-embedding-3-large`
 3. **Connect Services** — Azure AI Search, Bing Search, Application Insights
 
-For detailed setup instructions, see [Microsoft Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/).
+ a. Configure an Azure Search Service**
+   - Create an Azure AI Search resource in Azure
+   - Connect this resource to your Microsoft Foundry project
+      - Navigate to your Microsoft Foundry project → Management Center → Connected Resources → Add Connection → Select Azure AI Search
+      <img src="images/foundry-connection.png" width="75%"/>
+
+ b. Configure Grounding with Bing Search**
+   - Create a new Grounding with Bing Search resource in Azure
+   - Connect this resource to your Microsoft Foundry project
+      - Navigate to your Microsoft Foundry project → Management Center → Connected Resources → Add Connection → Select Grounding with Bing Search
+
 
 ### Step 5: Required Azure RBAC Roles
 
 Assign the following roles based on the notebooks you plan to run. Each role specifies whether it should be assigned to **your user identity** or to the **Project Managed Identity**.
 
-#### 🔑 Core Roles (Required for All Notebooks)
+#### Core Roles (Required for All Notebooks)
 
 | Role | Assignee | Resource | Purpose |
 |------|----------|----------|---------|
@@ -224,9 +216,9 @@ Assign the following roles based on the notebooks you plan to run. Each role spe
 | **Search Index Data Contributor** | User | AI Search Resource | Create indexes, upload documents | `3-agents-aisearch.ipynb`, `6-foundry-IQ-agents.ipynb` |
 | **Search Index Data Reader** | User | AI Search Resource | Query search indexes | `3-agents-aisearch.ipynb`, `6-foundry-IQ-agents.ipynb` |
 | **Search Service Contributor** | User | AI Search Resource | Manage search service, create knowledge bases | `6-foundry-IQ-agents.ipynb` |
-| **Search Index Data Reader** | Managed Identity | AI Search Resource | ⚠️ **CRITICAL**: Agent runtime access to knowledge bases | `6-foundry-IQ-agents.ipynb` |
+| **Search Index Data Reader** | Managed Identity | AI Search Resource | **CRITICAL**: Agent runtime access to knowledge bases | `6-foundry-IQ-agents.ipynb` |
 
-#### ️ Role Assignment Commands
+#### Role Assignment Commands
 
 ```powershell
 # Get your user principal ID
@@ -250,7 +242,7 @@ az role assignment create --role "Search Index Data Reader" --assignee $USER_PRI
 az role assignment create --role "Search Service Contributor" --assignee $USER_PRINCIPAL_ID --scope $SEARCH_SCOPE
 
 # ═══════════════════════════════════════════════════════════════
-# MANAGED IDENTITY ROLES (⚠️ CRITICAL for Foundry IQ Agents)
+# MANAGED IDENTITY ROLES (CRITICAL for Foundry IQ Agents)
 # ═══════════════════════════════════════════════════════════════
 
 # Get Project Managed Identity from Azure Portal:
@@ -260,17 +252,17 @@ $PROJECT_MI_ID = "<PROJECT_MANAGED_IDENTITY_PRINCIPAL_ID>"
 az role assignment create --role "Search Index Data Reader" --assignee $PROJECT_MI_ID --scope $SEARCH_SCOPE
 ```
 
-> **⚠️ Critical Notes:**
+> **Critical Notes:**
 > - **Managed Identity Role**: The `Search Index Data Reader` on the Project Managed Identity is **required** for `6-foundry-IQ-agents.ipynb` - without it, the MCP tool cannot query the knowledge base at runtime.
 > - **Role Propagation**: Role assignments can take **5-10 minutes** to propagate. If you encounter permission errors, wait and retry.  
 
 ---
 
-## 📚 Learning Path
+## Learning Path
 
 Follow this structured learning path to master Microsoft Foundry and AI Agents:
 
-### 🤖 Phase 1: Azure AI Agents SDK
+### Phase 1: Azure AI Agents SDK
 **Location:** `azure-ai-agents/`
 
 | # | Notebook | Description |
@@ -280,16 +272,16 @@ Follow this structured learning path to master Microsoft Foundry and AI Agents:
 | 3 | [Agents + AI Search](azure-ai-agents/3-agents-aisearch.ipynb) | Enterprise search integration |
 | 4 | [Bing Grounding](azure-ai-agents/4-bing-grounding.ipynb) | Web search integration |
 | 5 | [Multi-Agent Workflows](azure-ai-agents/5-multi-agent-solution-with-workflows.ipynb) | YAML-based multi-agent orchestration for insurance claims |
-| 6 | [🧠 Foundry IQ Agents](azure-ai-agents/6-foundry-IQ-agents.ipynb) | **Revolutionary agentic retrieval** - Multi-source fraud investigation |
+| 6 | [Foundry IQ Agents](azure-ai-agents/6-foundry-IQ-agents.ipynb) | **Revolutionary agentic retrieval** - Multi-source fraud investigation |
 | 7 | [Agent Memory Search](azure-ai-agents/7-agent-memory-search.ipynb) | Persistent memory patterns for personalized banking |
 | 8 | [MCP Tools](azure-ai-agents/8-mcp-tools.ipynb) | Foundry MCP Server integration |
 
-### 🤖⚙️ Phase 2: Microsoft Agent Framework
+### Phase 2: Microsoft Agent Framework
 **Location:** `agent-framework/agents/azure-ai-agents/`
 
 The **Microsoft Agent Framework** is an open-source SDK that unifies Semantic Kernel and AutoGen into the next-generation foundation for AI agent development. It offers **AI Agents** for autonomous decision-making with tool integration, and **Workflows** for orchestrating complex multi-agent processes with type safety and checkpointing.
 
-📖 [Official Documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) • 🔗 [GitHub Repository](https://github.com/microsoft/agent-framework) • 📚 [Complete Guide](agent-framework/README.md)
+[Official Documentation](https://learn.microsoft.com/en-us/agent-framework/overview/agent-framework-overview) • [GitHub Repository](https://github.com/microsoft/agent-framework) • [Complete Guide](agent-framework/README.md)
 
 | # | Notebook | Description |
 |---|----------|-------------|
@@ -297,7 +289,7 @@ The **Microsoft Agent Framework** is an open-source SDK that unifies Semantic Ke
 | 2 | [Magentic Compliance Review](agent-framework/agents/azure-ai-agents/2-magentic-compliance-review-with-human-input.ipynb) | Investment research with human-in-the-loop plan review |
 | 3 | [Magentic Investment Research](agent-framework/agents/azure-ai-agents/3-magentic-investment-research.ipynb) | Multi-agent orchestration for investment research reports |
 
-### 📊 Phase 3: Observability & Evaluations
+### Phase 3: Observability & Evaluations
 **Location:** `observability-and-evaluations/`
 
 Comprehensive evaluation and observability for AI agents.
@@ -308,13 +300,13 @@ Comprehensive evaluation and observability for AI agents.
 | 2 | [Agent Evaluation](observability-and-evaluations/2-agent-evaluation.ipynb) | Advisory Agent Quality | Built-in evaluators (violence, fluency, task_adherence) |
 | 3 | [Tool Call Accuracy](observability-and-evaluations/3-tool-call-accuracy-evaluation.ipynb) | Operations Tooling | `builtin.tool_call_accuracy`, JSONL data sources |
 
-📖 [Complete Guide](observability-and-evaluations/README.md)
+[Complete Guide](observability-and-evaluations/README.md)
 
 ---
 
-## 🛠️ Troubleshooting & Support
+## Troubleshooting & Support
 
-### ⚡ Common Issues & Solutions
+### Common Issues & Solutions
 
 | Issue | Solution |
 |-------|----------|
@@ -325,7 +317,7 @@ Comprehensive evaluation and observability for AI agents.
 | **Redis Connectivity** | Update connection string and confirm service is reachable |
 | **Application Insights Delay** | Use Live Metrics Stream for real-time debugging |
 
-### 📚 Additional Resources
+### Additional Resources
 
 | Resource | Link |
 |----------|------|
@@ -338,20 +330,20 @@ Comprehensive evaluation and observability for AI agents.
 
 ---
 
-## 🤝 Community & Contributions
+## Community & Contributions
 
 | Contribution Type | Description |
 |-------------------|-------------|
-| 📝 **Documentation** | Improve clarity and add examples |
-| 🐛 **Bug Reports** | Help identify and fix issues |
-| 💡 **Feature Requests** | Suggest new capabilities |
-| 🔄 **Pull Requests** | Contribute code and enhancements |
+| **Documentation** | Improve clarity and add examples |
+| **Bug Reports** | Help identify and fix issues |
+| **Feature Requests** | Suggest new capabilities |
+| **Pull Requests** | Contribute code and enhancements |
 
 Please review our [Contributing Guide](CONTRIBUTING.md) for code style, testing requirements, and PR process.
 
 ---
 
-## 📄 License
+## License
 
 **License:** MIT License  
 **Repository:** [github.com/dhangerkapil/agentic-ai-immersion](https://github.com/dhangerkapil/agentic-ai-immersion)
@@ -360,8 +352,8 @@ Please review our [Contributing Guide](CONTRIBUTING.md) for code style, testing 
 
 <div align="center">
 
-**Built with ❤️ for the AI Developer Community**
+**Built with for the AI Developer Community**
 
-*Happy Learning! 🚀*
+*Happy Learning!*
 
 </div>

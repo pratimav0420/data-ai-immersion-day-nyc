@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # =============================================================================
-# 🔐 SENSITIVE FILES - NEVER COMMIT
+# SENSITIVE FILES - NEVER COMMIT
 # =============================================================================
 # Environment files with secrets
 .env
@@ -30,7 +30,7 @@ secrets.yml
 *.so
 
 # =============================================================================
-# ☁️ TERRAFORM / INFRASTRUCTURE
+# TERRAFORM / INFRASTRUCTURE
 # =============================================================================
 infrastructure/.terraform/
 infrastructure/terraform.tfstate.d
@@ -178,7 +178,7 @@ appsettings.json
 sample/frontend/.env
 
 # =============================================================================
-# 🖥️ OS FILES
+# OS FILES
 # =============================================================================
 .cache/
 .DS_Store
@@ -209,7 +209,7 @@ conversations/
 requirements_exported.txt
 
 # =============================================================================
-# 🔑 SECURITY AND CERTIFICATE FILES
+# SECURITY AND CERTIFICATE FILES
 # =============================================================================
 *.pem
 *.key
@@ -223,7 +223,7 @@ requirements_exported.txt
 .venv-sk/
 
 # =============================================================================
-# ☁️ AZURE SPECIFIC
+# AZURE SPECIFIC
 # =============================================================================
 .azure/
 .azure
@@ -234,7 +234,7 @@ local.settings.json
 .github/chatmodes/
 
 # =============================================================================
-# 📊 NOTEBOOK OUTPUT FILES (regenerated on run)
+# NOTEBOOK OUTPUT FILES (regenerated on run)
 # =============================================================================
 cloud_evaluation_results.json
 evaluation_error_log.json
@@ -251,7 +251,7 @@ bmi_analysis_assistant-*.png
 logs/
 
 # =============================================================================
-# 🗑️ TEMPORARY FILES
+# TEMPORARY FILES
 # =============================================================================
 *.tmp
 *.tmp_proj

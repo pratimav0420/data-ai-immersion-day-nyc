@@ -1,4 +1,4 @@
-# 🤖 Microsoft Agent Framework Samples
+# Microsoft Agent Framework Samples
 
 Practical notebooks and reference material for building Microsoft Agent Framework solutions across agents, workflows, memory, middleware, and observability scenarios — all with **real-world business** use cases.
 

@@ -1,4 +1,4 @@
-# 📊 Observability and Evaluations with Microsoft Foundry
+# Observability and Evaluations with Microsoft Foundry
 
 Practical notebooks for implementing **telemetry**, **tracing**, and **AI agent evaluations** using Microsoft Foundry — all with **real-world business** use cases.
 
@@ -66,7 +66,7 @@ All notebooks feature **business use cases** including advisory services, approv
 
 ## Repository Guide
 
-### 📊 Notebook Overview
+### Notebook Overview
 
 | Notebook | Use Case | Key Concept |
 |----------|----------|-------------|
